@@ -4,10 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookstore | Home</title>
+  echo "<style>" >> index.html
+echo "  nav ul { list-style: none; padding: 0; display: flex; gap: 10px; }" >> index.html
+echo "  nav ul li { display: inline; }" >> index.html
+echo "  nav ul li a { text-decoration: none; color: blue; font-weight: bold; }" >> index.html
+echo "</style>" >> index.html
 </head>
 <body>
 
 echo "<header>Bookstore Header</header>" >> index.html
+echo "    <nav>" >> index.html
+echo "      <ul>" >> index.html
+echo "        <li><a href='#home'>Home</a></li>" >> index.html
+echo "        <li><a href='#books'>Books</a></li>" >> index.html
+echo "        <li><a href='#contact'>Contact</a></li>" >> index.html
+echo "      </ul>" >> index.html
+echo "    </nav>" >> index.html
 echo "<main>Books listing here</main>" >> index.html
 echo "<footer>Footer info</footer>" >> index.html
 </body>
