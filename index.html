@@ -8,7 +8,17 @@
 <body>
 
 echo "<header>Bookstore Header</header>" >> index.html
-echo "<main>Books listing here</main>" >> index.html
+echo "    <main>" > index.html
+echo "      <section id='categories'>" >> index.html
+echo "        <h2>Book Categories</h2>" >> index.html
+echo "        <ul>" >> index.html
+echo "          <li>Fiction</li>" >> index.html
+echo "          <li>Non-Fiction</li>" >> index.html
+echo "          <li>Children's Books</li>" >> index.html
+echo "          <li>Education</li>" >> index.html
+echo "        </ul>" >> index.html
+echo "      </section>" >> index.html
+echo "    </main>" >> index.html
 echo "<footer>Footer info</footer>" >> index.html
 </body>
 </html>
