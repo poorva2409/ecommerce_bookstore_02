@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bookstore | Home</title>
 </head>
+echo "<style>" >> index.html
+echo "  body { font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; }" >> index.html
+echo "  header, footer { background-color: #333; color: white; padding: 10px; text-align: center; }" >> index.html
+echo "  section#categories { background-color: #fff; padding: 20px; border: 1px solid #ccc; }" >> index.html
+echo "  ul { list-style: square; padding-left: 20px; }" >> index.html
+echo "  li { margin-bottom: 5px; }" >> index.html
+echo "</style>" >> index.html
 <body>
 
 echo "<header>Bookstore Header</header>" >> index.html
 echo "    <main>" > index.html
 echo "      <section id='categories'>" >> index.html
 echo "        <h2>Book Categories</h2>" >> index.html
+echo "      <p>Explore a wide range of books across various genres suited for every reader.</p>" >> index.html
 echo "        <ul>" >> index.html
 echo "          <li>Fiction</li>" >> index.html
 echo "          <li>Non-Fiction</li>" >> index.html
@@ -19,8 +27,14 @@ echo "          <li>Education</li>" >> index.html
 echo "        echo "          <li>Science Fiction</li>" >> index.html
 echo "          <li>Biographies</li>" >> index.html
 echo "          <li>Comics</li>" >> index.html
+echo "      <li>Romance</li>" >> index.html
+echo "      <li>Mystery</li>" >> index.html
+echo "      <li>Horror</li>" >> index.html
+echo "      <li>Self-help</li>" >> index.html
+echo "      <li>Travel</li>" >> index.html
 </ul>" >> index.html
 echo "      </section>" >> index.html
+echo "<!-- Book Categories Section Completed -->" >> index.html
 echo "    </main>" >> index.html
 echo "<footer>Footer info</footer>" >> index.html
 </body>
