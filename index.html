@@ -1,68 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bookstore | Home</title>
-  echo "<style>" >> index.html
-  echo "  nav {" >> index.html
-echo "    display: flex;" >> index.html
-echo "    justify-content: flex-end;" >> index.html
-echo "    gap: 15px;" >> index.html
-echo "    padding: 10px;" >> index.html
-echo "    background-color: #eee;" >> index.html
-echo "    font-size: 14px;" >> index.html
-echo "  }" >> index.html
+  <style>
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 10px;
+    }
 
-echo "  #user-info a {" >> index.html
-echo "    text-decoration: none;" >> index.html
-echo "    color: #333;" >> index.html
-echo "    font-weight: bold;" >> index.html
-echo "  }" >> index.html
+    nav ul li {
+      display: inline;
+    }
 
-echo "  #user-status {" >> index.html
-echo "    margin-right: auto;" >> index.html
-echo "  }" >> index.html
+    nav ul li a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
 
-echo "</style>" >> index.html
-echo "</style>" >> index.html
+    #user-info a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    #user-status {
+      margin-right: auto;
+    }
+
+    #user-info {
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding: 10px;
+      background-color: #eee;
+      font-size: 14px;
+    }
+
+    .book {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
 
-echo "<header>Bookstore Header</header>" >> index.html
-<div id="user-info">
-  <span id="user-status">Welcome, Guest</span>
-  <a href="#login" id="login-button">Login</a>
-  <a href="#cart" id="cart-button">Cart (0)</a>
-</div>
-echo "    <main>" > index.html
-echo "      <section id='categories'>" >> index.html
-echo "        <h2>Book Categories</h2>" >> index.html
-echo "        <ul>" >> index.html
-echo "          <li>Fiction</li>" >> index.html
-echo "          <li>Non-Fiction</li>" >> index.html
-echo "          <li>Children's Books</li>" >> index.html
-echo "          <li>Education</li>" >> index.html
-echo "        echo "          <li>Science Fiction</li>" >> index.html
-echo "          <li>Biographies</li>" >> index.html
-echo "          <li>Comics</li>" >> index.html
-</ul>" >> index.html
-echo "      </section>" >> index.html
-echo "<main>Books listing here</main>" >> index.html
-echo "<section id='newsletter'>" >> index.html
-echo "  <h2>Subscribe to our Newsletter</h2>" >> index.html
-echo "  <form>" >> index.html
-echo "    <input type='email' placeholder='Enter your email' required>" >> index.html
-echo "    <button type='submit'>Subscribe</button>" >> index.html
-echo "  </form>" >> index.html
-echo "</section>" >> index.html
-echo "<footer>Footer info</footer>" >> index.html
-<section id="feedback">
-  <h2>User Feedback</h2>
-  <div class="feedback">
-    <p>"Great collection of books!" - User A</p>
-    <p>"Fast delivery and good service." - User B</p>
+  <header>Bookstore Header</header>
+
+  <div id="user-info">
+    <span id="user-status">Welcome, Guest</span>
+    <a href="#login" id="login-button">Login</a>
+    <a href="#cart" id="cart-button">Cart (0)</a>
   </div>
-</section>
+
+  <main>
+    <section id="categories">
+      <h2>Book Categories</h2>
+      <ul>
+        <li>Fiction</li>
+        <li>Non-Fiction</li>
+        <li>Children's Books</li>
+        <li>Education</li>
+        <li>Science Fiction</li>
+        <li>Biographies</li>
+        <li>Comics</li>
+      </ul>
+    </section>
+
+    <section id="featured">
+      <h2>Featured Books</h2>
+
+      <div class="book">
+        <h3>Atomic Habits</h3>
+        <p>Author: James Clear</p>
+      </div>
+
+      <div class="book">
+        <h3>Ikigai</h3>
+        <p>Author: Héctor García & Francesc Miralles</p>
+      </div>
+
+      <div class="book">
+        <h3>The Psychology of Money</h3>
+        <p>Author: Morgan Housel</p>
+      </div>
+    </section>
+
+    <main>Books listing here</main>
+
+    <section id="newsletter">
+      <h2>Subscribe to our Newsletter</h2>
+      <form>
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section id="feedback">
+      <p>"Great collection of books!" - User A</p>
+      <p>"Fast delivery and good service." - User B</p>
+    </section>
+  </main>
+
+  <footer>Footer info here</footer>
+
 </body>
 </html>
+
