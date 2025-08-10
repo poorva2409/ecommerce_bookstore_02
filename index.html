@@ -54,6 +54,28 @@
       font-size: 14px;
     }
   </style>
+<style>
+  #featured {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+
+  .book {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+.book {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.book h3 {
+  color: #333;
+}
+</style>
 </head>
 echo "<style>" >> index.html
 echo "  body { font-family: Arial, sans-serif; background-color: #f9f9f9; padding: 20px; }" >> index.html
@@ -124,6 +146,7 @@ echo "</style>" >> index.html
   <footer>Footer info here</footer>
 
 echo "<header>Bookstore Header</header>" >> index.html
+<<<<<<< HEAD
 echo "    <main>" > index.html
 echo "      <section id='categories'>" >> index.html
 echo "        <h2>Book Categories</h2>" >> index.html
@@ -189,6 +212,23 @@ echo "    <li>Mark Twain</li>" >> index.html
 echo "  </ul>" >> index.html
 echo "</section>" >> index.html
 echo "<!-- Featured Authors Section Completed -->" >> index.html
+=======
+echo "<main>Books listing here</main>" >> index.html
+<section id="featured">
+  <h2>Featured Books</h2>
+  <div class="book">
+    <h3>Book Title 1</h3>
+    <p>Author: Author Name 1</p>
+  </div>
+  <div class="book">
+    <h3>Book Title 2</h3>
+    <p>Author: Author Name 2</p>
+  </div>
+<div class="book">
+    <h3>Book Title 3</h3>
+    <p>Author: Author Name 3</p>
+  </div>
+</section>
 echo "<footer>Footer info</footer>" >> index.html
 </body>
 </html>
