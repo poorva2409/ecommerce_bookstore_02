@@ -15,7 +15,8 @@ The repository contains separate contributions from each team member, merged int
 
 My Contribution — Index & Navigation
 
-I was responsible for designing and implementing the homepage structure and navigation system. My work included:
+I was responsible for designing and implementing the homepage structure and navigation system. 
+My work included:
 
 1. Navigation Menu
 	•	Created a <nav> element with links to:
